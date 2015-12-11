@@ -28,6 +28,9 @@ Vue.component('spark-simple-registration-screen', {
             forms: {
                 registration: $.extend(true, new SparkForm({
                     team_name: '',
+                    address:'',
+                    address2:'',
+                    zip: '',
                     name: '',
                     email: '',
                     password: '',
