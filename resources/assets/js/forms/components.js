@@ -33,6 +33,55 @@ Vue.component('spark-email', {
 </div>'
 });
 
+/**
+ * Adddress field input component for Bootstrap.
+ */
+Vue.component('address', {
+    props: ['display', 'form', 'name', 'input'],
+
+    template: '<div class="form-group" :class="{\'has-error\': form.errors.has(name)}">\
+    <label class="col-md-4 control-label">{{ display }}</label>\
+    <div class="col-md-6">\
+        <input type="text" class="form-control" v-model="input">\
+        <span class="help-block" v-show="form.errors.has(name)">\
+            <strong>{{ form.errors.get(name) }}</strong>\
+        </span>\
+    </div>\
+</div>'
+});
+/**
+ * Addressline 2 field input component for Bootstrap.
+ */
+Vue.component('address2', {
+    props: ['display', 'form', 'name', 'input'],
+
+    template: '<div class="form-group" :class="{\'has-error\': form.errors.has(name)}">\
+    <label class="col-md-4 control-label">{{ display }}</label>\
+    <div class="col-md-6">\
+        <input type="text" class="form-control" v-model="input">\
+        <span class="help-block" v-show="form.errors.has(name)">\
+            <strong>{{ form.errors.get(name) }}</strong>\
+        </span>\
+    </div>\
+</div>'
+});
+
+/**
+ * Zipcode field input component for Bootstrap.
+ */
+Vue.component('zip', {
+    props: ['display', 'form', 'name', 'input'],
+
+    template: '<div class="form-group" :class="{\'has-error\': form.errors.has(name)}">\
+    <label class="col-md-4 control-label">{{ display }}</label>\
+    <div class="col-md-6">\
+        <input type="text" class="form-control" v-model="input">\
+        <span class="help-block" v-show="form.errors.has(name)">\
+            <strong>{{ form.errors.get(name) }}</strong>\
+        </span>\
+    </div>\
+</div>'
+});
 
 /**
  * Password field input component for Bootstrap.
